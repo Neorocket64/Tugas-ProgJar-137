@@ -15,16 +15,17 @@ while True:
     connection, client_address = sock.accept()
     print(f"connection from {client_address}")
     # Receive the data in small chunks and retransmit it
-    f = open('file_'+ str(i)+".txt",'wb') #open in binary
+    f = open('file_'+ str(i)+".pdf",'wb') #open in binary
     i=i+1
     while True:
         data = connection.recv(1024)
         while (data):
                 f.write(data)
                 data = connection.recv(1024)
-                print("buffering")
-        else: break
-    f.close()
+                # print("buffering")
+        else: 
+            f.close()
+            break
     print("success")
     # Clean up the connection
     connection.close()

@@ -11,9 +11,8 @@ sock.connect(server_address)
 
 
 try:
-    # Send data
-    # Look for the response
-    f = open ("test.txt", "rb")
+    # send file
+    f = open ("kodedosentc.pdf", "rb")
     l = f.read(1024)
     while (l):
         sock.send(l)
