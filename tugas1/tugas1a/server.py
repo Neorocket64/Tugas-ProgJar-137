@@ -3,7 +3,7 @@ import socket
 # Create a TCP/IP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # Bind the socket to the port 31000, 31001, 31002
-server_address = ('localhost', 31000)
+server_address = ('localhost', 31002)
 print(f"starting up on {server_address}")
 sock.bind(server_address)
 # Listen for incoming connections
