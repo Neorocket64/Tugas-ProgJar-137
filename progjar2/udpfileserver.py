@@ -1,7 +1,7 @@
 import socket
 
 
-SERVER_IP = '127.0.0.1'
+SERVER_IP = '10.151.254.227'
 SERVER_PORT = 5006
 NAMAFILE='coba.png'
 
