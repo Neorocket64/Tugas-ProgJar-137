@@ -10,12 +10,12 @@ COMMAND spasi PARAMETER spasi PARAMETER ...
 
 FITUR
 
-- create : untuk membuat record
+- download : untuk mengunduh file
   request : download
   parameter : nama_file
   response : berhasil -> mendapatkan file
 
-- delete : untuk menghapus record
+- upload : untuk mengunggah file
   request: upload
   parameter : nama_file
   response: berhasil -> berhasil upload file
