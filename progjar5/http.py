@@ -47,7 +47,7 @@ class HttpServer:
 			return self.response(400,'Bad Request','',{})
 	def http_get(self,object_address):
 		files = glob('./*')
-		thedir='.'
+		thedir='.\\'
 		if thedir+object_address not in files:
 			return self.response(404,'Not Found','',{})
 		fp = open(thedir+object_address,'r')
